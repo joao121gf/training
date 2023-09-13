@@ -100,6 +100,7 @@ body {
   height: 70%;
   position: fixed;
   background-color: #846cb8;
+  /* display: none; */
 }
 
 .data-colect h1 {
@@ -118,11 +119,11 @@ li {
   padding-left: 40px;
 }
 
-.datas:nth-child(odd) {
+.datas li:nth-child(odd) {
   background-color: #cec6df;
 }
 
-.datas:nth-child(even) {
+.datas li:nth-child(even) {
   background-color: #5e4497;
 }
 
@@ -134,11 +135,13 @@ li {
 }
 
 .delete {
-    width: 1.2rem;
-    background-color: #b10505;
-    padding: 7px 16px;
-    border-radius: 10px;
-    margin-left: 10px;
+  width: 1.2rem;
+  background-color: #b10505;
+  padding: 7px 16px;
+  border-radius: 10px;
+  margin-left: 10px;
+  left: 83%;
+  position: absolute;
 }
 
 
@@ -150,11 +153,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .datas{
     justify-content: space-between;
-    display: flex;
+
+}
+
+.datas li{
+  display: flex;
+  align-items: center;
 }
 
 .arrow{
