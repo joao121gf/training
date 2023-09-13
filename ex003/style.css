@@ -118,11 +118,11 @@ li {
   padding-left: 40px;
 }
 
-li:nth-child(odd) {
+.datas:nth-child(odd) {
   background-color: #cec6df;
 }
 
-li:nth-child(even) {
+.datas:nth-child(even) {
   background-color: #5e4497;
 }
 
@@ -138,13 +138,14 @@ li:nth-child(even) {
     background-color: #b10505;
     padding: 7px 16px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 
 .icons{
     width: 100px;
     position: relative;
-    left: -12%;
+    left: -4%;
     top: 0%;
     display: flex;
     justify-content: center;
@@ -153,5 +154,13 @@ li:nth-child(even) {
 
 .datas{
     justify-content: space-between;
+    display: flex;
 }
 
+.arrow{
+    width: 40px;
+    border-radius: 54px;
+    position: absolute;
+    left: 97%;
+    top: -4%;
+}
