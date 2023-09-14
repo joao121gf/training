@@ -8,8 +8,6 @@ const containerResults = document.querySelector(".container-results");
 
 const listData = document.querySelectorAll(".datas li");
 
-
-
 let emptyList = [];
 
 function colectData() {
@@ -20,16 +18,17 @@ function colectData() {
   let icon = document.createElement("img");
   icon.src = "elements/lixo.png";
   icon.alt = "Ícone";
-  icon.classList.add('delete')
+  icon.classList.add("delete");
   newDiv.appendChild(icon);
 
+  icon.addEventListener("click", function () {
+    let divDatas = newDiv.closest("li");
+    if (divDatas) {
+      divDatas.remove();
+    }
+  });
 
   latestDatas.insertBefore(newDiv, latestDatas.firstChild);
-
-
-  
-
-  //   emptyList.push(dataAsk);
 }
 btnSub.addEventListener("click", colectData);
 
