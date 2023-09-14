@@ -1,0 +1,69 @@
+.container-father{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-content {
+    width: 60%;
+    background-color: aquamarine;
+    display: flex;
+    border: 1px solid transparent;
+    overflow: hidden; /* Ocultar a parte da borda que está fora do container */
+    position: relative; /* Permitir posicionamento absoluto do pseudo-elemento */
+}
+
+
+.box-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, transparent, green, transparent);
+    border-image-slice: 1;
+    animation: spin 4s linear infinite;
+    z-index: -1; /* Colocar a borda atrás do conteúdo */
+  }
+
+
+.email{
+    padding: 5px;
+    background-color: aliceblue;
+    position: absolute;
+
+}
+
+
+
+.animated-border {
+    width: 200px;
+    height: 200px;
+    position: relative; /* Tornar o posicionamento relativo para permitir o posicionamento absoluto da borda */
+    overflow: hidden; /* Ocultar parte da borda que está fora do container */
+  }
+
+  .border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, transparent, green, transparent);
+    border-image-slice: 1;
+    animation: spin 4s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
