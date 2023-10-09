@@ -27,6 +27,7 @@
 
 body{
     background-color: rgb(12, 12, 12);
+    overflow: hidden;
 }
 #bck{
     position: fixed;
@@ -65,3 +66,29 @@ body{
     z-index: 6000;
 }
 
+.sets{
+    position: absolute;
+}
+
+.left{
+    width: 33px !important;
+    position: relative;
+    left: 663px;
+    top: 191px;
+    z-index: 6998;
+    /* border: none !important; */
+    border-radius: 47px;
+    padding: 9px;
+}
+
+
+.right{
+    width: 33px !important;
+    position: relative;
+    left: 1806px;
+    top: 136px;
+    z-index: 6998;
+    /* border: none !important; */
+    border-radius: 47px;
+    padding: 9px;
+}
