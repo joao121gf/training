@@ -76,7 +76,7 @@ body {
 
 .left {
   width: 33px !important;
-  position: relative;
+  position: absolute;
   left: 663px !important;
   top: 191px;
   z-index: 6998;
@@ -87,8 +87,8 @@ body {
 
 .right {
   width: 33px !important;
-  position: relative;
-  left: 1806px !important;
+  position: absolute;
+  left: 1913px !important;
   top: 191px;
   z-index: 6998;
   /* border: none !important; */
